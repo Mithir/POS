@@ -55,8 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DealsService.cs" />
     <Compile Include="POSService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\DealsRequest.cs" />
+    <Compile Include="Responses\DealResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
