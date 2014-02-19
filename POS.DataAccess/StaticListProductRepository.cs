@@ -6,7 +6,7 @@ using POS.DM;
 
 namespace POS.DataAccess
 {
-    class StaticListProductRepository : ProductRepository
+    public class StaticListProductRepository : ProductRepository
     {
         private static List<Product> products = new List<Product>
         {

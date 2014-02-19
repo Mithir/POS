@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using ServiceStack;
 using Funq;
 using POS.API;
@@ -10,7 +7,7 @@ namespace POS.ConsoleApplicationHostRunner
 {
     public class AppHost : AppHostHttpListenerBase
     {
-        public AppHost() : base("StarterTemplate HttpListener", typeof(POSService).Assembly) { }
+        public AppHost() : base("StarterTemplate HttpListener", typeof(DealsService).Assembly) { }
 
         public override void Configure(Container container)
         {

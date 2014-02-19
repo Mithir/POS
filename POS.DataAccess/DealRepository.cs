@@ -6,7 +6,7 @@ using POS.DM;
 
 namespace POS.DataAccess
 {
-    abstract class DealRepository
+    public abstract class DealRepository
     {
         abstract public List<Deal> GetDeals(long companyId = 0);
 

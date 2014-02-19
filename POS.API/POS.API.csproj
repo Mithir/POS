@@ -59,10 +59,20 @@
     <Compile Include="POSService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\DealsRequest.cs" />
-    <Compile Include="Responses\DealResponse.cs" />
+    <Compile Include="Responses\DealsResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POS.BL\POS.BL.csproj">
+      <Project>{317F1939-7D6B-4835-BE36-9B4873625E2D}</Project>
+      <Name>POS.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.DM\POS.DM.csproj">
+      <Project>{4CAE1D03-B62F-48D5-8D7F-4B80BD0F7BC9}</Project>
+      <Name>POS.DM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
